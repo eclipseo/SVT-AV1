@@ -40,6 +40,7 @@ file(GLOB all_files
  
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     list(APPEND PLATFORM_LIBS m)
+    list(APPEND PLATFORM_LIBS pthread)
 endif()
 
 if(BUILD_SHARED_LIBS)
